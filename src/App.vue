@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <SearchInput />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import SearchInput from './components/SearchInput'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    SearchInput
   }
 }
 </script>
