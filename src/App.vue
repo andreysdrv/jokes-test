@@ -1,16 +1,17 @@
 <template>
   <div id="app">
-    <SearchInput />
+    <!-- <SearchInput /> -->
+    <Main />
   </div>
 </template>
 
 <script>
-import SearchInput from './components/SearchInput'
+import Main from './components/Main/Main.vue'
 
 export default {
   name: 'App',
   components: {
-    SearchInput
+    Main
   }
 }
 </script>
