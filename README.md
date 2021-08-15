@@ -1,21 +1,17 @@
-# jokes-test
+# Тестовое задание на vue.js
 
-> A Vue.js project
-
-## Build Setup
+## Инструкция по развертыванию
 
 ``` bash
-# install dependencies
+# Клонировать репозиторий
+git clone https://github.com/andreysdrv/jokes-test.git
+
+# Установить зависимости
 npm install
 
-# serve with hot reload at localhost:8080
+# Запустить dev-сборку на localhost:8080 с хотрелоудом
 npm run dev
 
-# build for production with minification
+# Собрать проект для продашена в минифицированном виде
 npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
