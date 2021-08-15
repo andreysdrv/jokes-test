@@ -1,5 +1,5 @@
 export const getJokes = () => {
-  return fetch('https://v2.jokeapi.dev/joke/Programming,Dark?type=single&amount=10', {
+  return fetch('https://v2.jokeapi.dev/joke/Programming?type=single&amount=10', {
     method: 'GET'
   })
     .then((res) => {
