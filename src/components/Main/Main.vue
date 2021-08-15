@@ -5,7 +5,15 @@
       placeholder="Введите слово для поиска анекдотов ..."
       v-model="search"
     >
-      <JokesList :handleSearchInput='handleSearchInput' />
+      <JokesList
+        v-if="handleSearchInput.length !== 0"
+        :handleSearchInput='handleSearchInput'
+        />
+      <h1
+        v-else
+      >
+        По Вашему запросу анекдотов не нашлось :(
+      </h1>
   </div>
 </template>
 
@@ -28,7 +36,9 @@ export default {
   computed: {
     handleSearchInput () {
       return this.jokes.filter(el => {
-        return el.joke.toLowerCase().includes(this.search.toLowerCase())
+        const newArr = el.joke.toLowerCase().includes(this.search.toLowerCase())
+        console.log(newArr)
+        return newArr
       })
     }
   }
